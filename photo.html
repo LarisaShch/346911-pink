@@ -7,23 +7,21 @@
   <body class="body-page">
     <header class="page-header">
       <div class="page-header__menu-wrapper">
-        <div class="page-header__logo logo">
-          <a href="#" class="logo__link">PINK</a>
-        </div>
+          <a href="#" class="page-header__logo">PINK</a>
         <button class="page-header__menu-btn">Открыть меню</button>
-        <nav class="page-header__navigation menu-mobile">
-          <ul class="menu-mobile__list">
-            <li class="menu-mobile__item">
-              <a href="#" class="menu-mobile__link">ГЛАВНАЯ</a>
+        <nav class="page-header__navigation menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#" class="menu__link">ГЛАВНАЯ</a>
             </li>
-            <li class="menu-mobile__item">
-              <a href="#" class="menu-mobile__link">ФОТОГРАФИИ</a>
+            <li class="menu__item">
+              <a href="#" class="menu__link">ФОТОГРАФИИ</a>
             </li>
-            <li class="menu-mobile__item">
-              <a href="#" class="menu-mobile__link">КОНКУРС</a>
+            <li class="menu__item">
+              <a href="#" class="menu__link">КОНКУРС</a>
             </li>
-            <li class="menu-mobile__item">
-              <a href="#" class="menu-mobile__link"> HTML ACADEMY</a>
+            <li class="menu__item">
+              <a href="#" class="menu__link"> HTML ACADEMY</a>
             </li>
           </ul>
         </nav>
@@ -34,9 +32,7 @@
         <div class="main-content__title">
           <h1>Фотографии пользователей</h1>
         </div>
-        <div class="main-content__paragraph-wrapper">
           <p class="main-content__paragraph">Взгляните на фотографии, которые выкладывают пользователи!Видите, как не хватает ваших?</p>
-        </div>
         <article class="main-content__blog blog">
           <img src="http://placehold.it/150x100" alt="" class="blog__photo-panorama">
           <span class="blog__note">ПАНОРАМА ДНЯ</span>
@@ -92,8 +88,8 @@
           <label class="form__fill"><input type="range" name="fill"></label>
           <label class="form__intensity"><input type="range" name="intensity"></label>
           <div class="form__buttons button">
-            <button class="button__submit" type="submit" formaction="https://echo.htmlacademy.ru">Запостить</button>
-            <button class="button__reset" type="reset">Отмена</button>
+            <button class="button--submit" type="submit" formaction="https://echo.htmlacademy.ru">Запостить</button> <!-- А разве просто модификаторы могут быть отдельно? Без элементов???-->
+            <button class="button--reset" type="reset">Отмена</button>
           </div>
         </form>
       </div>
@@ -107,9 +103,9 @@
         <a href="#" class="social__link social__link--fb">Facebook</a>
         <a href="#" class="social__link social__link--youtube">Youtube</a>
       </div>
-      <div class="page-footer__developed-wrapper developed">
-        <span class="developed__text">Разработано</span>
-        <a href="https://htmlacademy.ru/" class="developed__link">HTML Academy</a>
+      <div class="page-footer__copyright-wrapper copyright">
+        <span class="copyright__text">Разработано</span>
+        <a href="https://htmlacademy.ru/" class="copyright__link">HTML Academy</a>
       </div>
     </footer>
 
