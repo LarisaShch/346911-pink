@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body class="body-page">
     <header class="page-header">
       <div class="page-header__menu-wrapper">
-          <a href="#" class="page-header__logo">PINK</a>
+          <a href="#" class="page-header__logo"><img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="PINK"></a>
         <button class="page-header__menu-btn">Открыть меню</button>
         <nav class="page-header__navigation menu">
           <ul class="menu__list">
@@ -29,13 +31,13 @@
     </header>
     <main class="page-main">
       <div class="page-main__picture">
-        <img src="http://placehold.it/150x100" alt="">
+        <!--<img src="img/iphone-hand-mobile@1x.png" alt="" >-->
       </div>
-      <a href="#" class="page-main__button">Скачать приложение</a>
       <div class="icon-download">
-        <a href="#" class="icon-download__link icon-download__link--apple"><img src="http://placehold.it/150x100" alt="apple"></a>
-        <a href="#" class="icon-download__link icon-download__link--android"><img src="http://placehold.it/150x100" alt="android"></a>
-        <a href="#" class="icon-download__link icon-download__link--windows"><img src="http://placehold.it/150x100" alt="windows"></a>
+        <a href="#" class="icon-download__button">Скачать приложение</a>
+        <a href="#" class="icon-download__link icon-download__link--apple"><img src="img/logo-apple.svg" alt="apple" width="48" height="57"></a>
+        <a href="#" class="icon-download__link icon-download__link--android"><img src="img/logo-android.svg" alt="android" width="45" height="47"></a>
+        <a href="#" class="icon-download__link icon-download__link--windows"><img src="img/logo-microsoft.svg" alt="windows" width="45" height="41"></a>
         <p class="icon-download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
       <div class="information">
@@ -55,7 +57,6 @@
           <h3 class="feature-item__title">Заводит новых друзей</h3>
           <p class="feature-item__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
         </section>
-        <img src="http://placehold.it/150x100" alt="Всем привет!">
       </div>
       <div class="feedback slider">
         <section class="reivew">
@@ -103,16 +104,16 @@
     </main>
     <div class="contacts">
       <h2 class="contacts__title">Остались вопросы?</h2>
-      <h2 class="contacts__title">Свяжитесь с нами!</h2>
+      <h2 class="contacts__title contacts__title--us">Свяжитесь с нами!</h2>
       <p class="contacts__paragraph">Звоните:</p>
       <p class="contacts__information">+7 (812) 555-66-66</p>
       <p class="contacts__paragraph">Пишите:</p>
       <p class="contacts__information">mail@htmlacademy.ru</p>
       <p class="contacts__paragraph">Приезжайте в гости:</p>
       <p class="contacts__information">ул.Большая Конюшенная, 19/8</p>
+      <div class="contacts__map"></div>
     </div>
     <footer class="page-footer">
-      <img src="http://placehold.it/150x100" alt="Карта">
     </footer>
   </body>
 </html>
