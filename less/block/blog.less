@@ -1,6 +1,8 @@
 .blog {
   background:@lightgrey;
   .padding();
+  width: 320px;
+  margin: auto;
 }
 
 .blog__note {
@@ -10,7 +12,8 @@
 }
 
 .blog--big {
-
+  width: 320px;
+  margin: auto;
   background:@lightgrey;
   .padding();
 }
@@ -47,4 +50,31 @@
   height: 12px;
   background-image: url("../img/icon-heart.svg");
   background-repeat: no-repeat;
+}
+
+@media (min-width: @tablet-width) {
+  .blog--big {
+    width:660px;
+  }
+
+  .blog {
+    display:flex;
+    flex-wrap:wrap;
+    width:270px;
+    margin: auto;
+    margin-top: 0;
+  }
+
+  .blog__wrapper--big {
+    width:565px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom:50px;
+  }
+
+  .blog__review {
+    order: 3;
+}
+
 }

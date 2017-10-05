@@ -1,3 +1,8 @@
+.forms {
+  width:320px;
+  margin:auto;
+}
+
 .forms__description {
   width:280px;
   color:@darkblue;
@@ -40,6 +45,7 @@
   color:#d22856;
   padding-bottom: 20px;
   padding-top:40px;
+  margin: auto;
 }
 
 .forms__label--checkbox {
@@ -110,4 +116,102 @@
 
 .forms__necessary--note {
   color:#db6681;
+}
+
+@media (min-width: @tablet-width) {
+  .forms {
+    width:660px;
+    display:flex;
+    flex-direction: column;
+  }
+  .forms__description {
+    width:437px;
+  }
+
+.forms__information-wrapper {
+  width:660px;
+  margin:auto;
+  .padding();
+  text-align: left;
+}
+
+.forms__label {
+  display:inline-block;
+  text-align:left;
+  color:#d8456d;
+  padding-right: 20px;
+}
+
+.forms__input {
+  width: 525px;
+  display:inline-block;
+}
+
+.forms__application {
+  order:2;
+  width:660px;
+  margin:auto;
+  background-color: @white-color;
+}
+
+.forms__contacts-wrapper {
+  order:3;
+}
+.forms__achievements {
+  order:4;
+  background-color: @white-color;
+}
+
+.forms__review-wrapper {
+  order:5;
+}
+
+.forms__send-wrapper {
+  order:6;
+  display: flex;
+}
+
+.forms__button {
+  margin-left:0;
+}
+}
+
+@media (min-width: @desktop-width) {
+  .forms {
+    width:1200px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+  }
+  .forms__description {
+    width:625px;
+  }
+
+  .forms__information-wrapper {
+    width:547px;
+  }
+
+  .forms__application {
+    width:450px;
+
+  }
+
+  .forms__contacts-wrapper {
+    width:950px;
+  }
+
+  .forms__achievements-wrapper {
+    width:950px;
+    margin: auto;
+  }
+
+  .forms__review-wrapper {
+    width:950px;
+  }
+
+  .forms__send-wrapper {
+    margin: auto;
+    width: 1100px;
+    justify-content: space-around;
+  }
 }

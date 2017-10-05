@@ -1,6 +1,8 @@
 .popup {
   .padding();
   display:none;
+  width:320px;
+  margin:auto;
 }
 
 .popup--failure {
@@ -35,4 +37,29 @@
 
 .popup__button--success {
   margin-top:48px;
+}
+
+@media (min-width: @tablet-width) {
+  .popup {
+    width:460px
+  }
+
+  .popup__title {
+    font-size:30px;
+    line-height:40px;
+  }
+
+  .popup__text {
+    width:250px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .popup--success {
+    width:780px;
+  }
+
+  .popup__text--success {
+    width:365px;
+  }
 }

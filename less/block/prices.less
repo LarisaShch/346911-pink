@@ -1,7 +1,8 @@
 .prices {
-  margin:auto;
-  width:100%;
+  margin-left: -355px;
+  width:800px;
   color:@darkblue;
+
 }
 
 .prices__first-line {
@@ -20,8 +21,8 @@
 }
 
 .prices__second-cell {
-  padding-top:20px;
-  padding-bottom:20px;
+  padding-top:15px;
+  padding-bottom:15px;
 }
 
 .prices__second-line {
@@ -34,4 +35,30 @@
 
 .prices__fourth-line {
   background:@white-color;
+}
+.prices__second-cell {
+  text-align:left;
+  padding-left:20px;
+}
+
+.prices__second-cell--title {
+  text-align:center;
+  padding-left:0;
+}
+
+@media (min-width: @tablet-width) {
+  .prices {
+    margin:auto;
+    width:620px;
+  }
+
+  .prices__zero-cell-empty {
+    background:@lightgrey;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .prices {
+    width:943px;
+  }
 }

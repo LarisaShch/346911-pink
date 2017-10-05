@@ -10,8 +10,8 @@
     <header class="page-header">
       <div class="page-header__menu-wrapper">
           <a href="#" class="page-header__logo"><img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="PINK"></a>
-        <button class="page-header__menu-btn">Открыть меню</button>
         <nav class="page-header__navigation menu">
+          <button class="menu__btn">Открыть меню</button>
           <ul class="menu__list">
             <li class="menu__item">
               <a href="#" class="menu__link">ГЛАВНАЯ</a>
@@ -30,10 +30,9 @@
       </div>
     </header>
     <main class="page-main">
-      <div class="page-main__picture">
-        <!--<img src="img/iphone-hand-mobile@1x.png" alt="" >-->
-      </div>
       <div class="icon-download">
+        <div class="icon-download__wrapper">
+        <h2 class="icon-download__title">Взгляните<br>на жизнь<br>иначе!</h2></div>
         <a href="#" class="icon-download__button">Скачать приложение</a>
         <a href="#" class="icon-download__link icon-download__link--apple"><img src="img/logo-apple.svg" alt="apple" width="48" height="57"></a>
         <a href="#" class="icon-download__link icon-download__link--android"><img src="img/logo-android.svg" alt="android" width="45" height="47"></a>
@@ -42,7 +41,7 @@
       </div>
       <div class="information">
         <h2 class="information__text">Устали от серости мегаполиса?</h2>
-        <h2 class="information__text">Нам есть, что вам предложить!</h2>
+        <h2 class="information__text">Нам есть, что вам<br> предложить!</h2>
       </div>
       <div class="features">
         <section class="feature-item">
@@ -58,8 +57,17 @@
           <p class="feature-item__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
         </section>
       </div>
+      <section class="features__promo">
+        <div class="features__promo-text">
+          <p class="features__promo-title">Эффект на 24 часа!</p>
+          <p>Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <a href="#" class="features__promo-link">Узнать больше об исследовании</a>
+        </div>
+        <img src="http://placehold.it/150x100" alt="Timer" width="238" height="279">
+      </section>
       <div class="feedback slider">
         <section class="reivew">
+          <p class="reivew__person">25 лет, водитель трамвая</p>
           <h2 class="reivew__autor">Николай Петров</h2>
           <p class="reivew__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         </section>
@@ -72,24 +80,34 @@
       <div class="prices-wrapper slider">
         <table class="prices">
           <tr class="prices__first-line">
-            <td class="prices__first-cell"></td>
-            <td class="prices__second-cell">
-              <p class="prices__title">Стандарт</p>
-              <p class="prices__amount">3,99</p>
+            <td class="prices__zero-cell-empty"></td>
+            <td class="prices__first-cell">
+              <p class="prices__title">БАЗА</p>
+              <p class="prices__amount">1,99 USD</p>
             </td>
-            <td class="prices__third-cell"></td>
+            <td class="prices__second-cell prices__second-cell--title">
+              <p class="prices__title">СТАНДАРТ</p>
+              <p class="prices__amount">3,99 USD</p>
+            </td>
+            <td class="prices__third-cell">
+              <p class="prices__title">АНЛИМ</p>
+              <p class="prices__amount">9,99 USD</p>
+            </td>
           </tr>
           <tr class="prices__second-line">
+            <td class="prices__zero-cell">Розовый фильтр</td>
             <td class="prices__first-cell"></td>
             <td class="prices__second-cell">Розовый фильтр</td>
             <td class="prices__third-cell"></td>
           </tr>
           <tr class="prices__third-line">
+            <td class="prices__zero-cell">Смайлики</td>
             <td class="prices__first-cell"></td>
             <td class="prices__second-cell">Смайлики</td>
             <td class="prices__third-cell"></td>
           </tr>
           <tr class="prices__fourth-line">
+            <td class="prices__zero-cell">Комментарии</td>
             <td class="prices__first-cell"></td>
             <td class="prices__second-cell">Комментарии</td>
             <td class="prices__third-cell"></td>
@@ -103,17 +121,39 @@
       </div>
     </main>
     <div class="contacts">
-      <h2 class="contacts__title">Остались вопросы?</h2>
-      <h2 class="contacts__title contacts__title--us">Свяжитесь с нами!</h2>
-      <p class="contacts__paragraph">Звоните:</p>
-      <p class="contacts__information">+7 (812) 555-66-66</p>
-      <p class="contacts__paragraph">Пишите:</p>
-      <p class="contacts__information">mail@htmlacademy.ru</p>
-      <p class="contacts__paragraph">Приезжайте в гости:</p>
-      <p class="contacts__information">ул.Большая Конюшенная, 19/8</p>
+      <div class="contacts__name">
+        <h2 class="contacts__title">Остались вопросы?</h2>
+        <h2 class="contacts__title contacts__title--us">Свяжитесь с нами!</h2>
+      </div>
+      <div class="contacts__phone">
+        <p class="contacts__paragraph">Звоните:</p>
+        <p class="contacts__information">+7 (812) 555-66-66</p>
+      </div>
+      <div class="contacts__email">
+        <p class="contacts__paragraph">Пишите:</p>
+        <p class="contacts__information">mail@htmlacademy.ru</p>
+      </div>
+      <div class="contacts__addres">
+        <p class="contacts__paragraph">Приезжайте в гости:</p>
+        <p class="contacts__information">ул.Большая Конюшенная, 19/8</p>
+      </div>
       <div class="contacts__map"></div>
     </div>
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--index">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo-wrapper footer-logo">
+          <a href="#" class="footer-logo__link"><img class="footer-logo__image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink"></a>
+        </div>
+        <div class="page-footer__social-wrapper social">
+          <a href="#" class="social__link social__link--tw">Twitter</a>
+          <a href="#" class="social__link social__link--fb">Facebook</a>
+          <a href="#" class="social__link social__link--youtube">Youtube</a>
+        </div>
+        <div class="page-footer__copyright-wrapper copyright">
+          <span class="copyright__text">Разработано</span>
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link"></a>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

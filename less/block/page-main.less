@@ -1,12 +1,18 @@
 .page-main {
-  width:100%;
+  width:320px;
   text-align:center;
+  margin:0 auto;
+  position: relative;
+}
+@media (min-width: @tablet-width) {
+  .page-main {
+    width:660px;
+  }
+  }
+
+@media (min-width: @desktop-width) {
+  .page-main {
+    width:1200px;
+  }
 }
 
-.page-main__picture {
-  width: 100%;
-  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height:395px;
-}
