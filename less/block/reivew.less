@@ -1,45 +1,44 @@
 .reivew {
-  width:283px;
-  margin:auto;
+  width: 283px;
+  margin: auto;
 }
 
 .reivew__autor {
   font-weight: 700;
-  line-height:30px;
+  line-height: 30px;
   font-size: 18px;
   color: black;
-  text-align: center
+  text-align: center;
 }
 
 .reivew__person {
-  display:none;
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
   .reivew {
-    width:625px;
-    display:flex;
+    width: 625px;
+    display: flex;
     flex-direction: column-reverse;
     justify-content: center;
   }
 
   .reivew__person {
-    display:block;
-    margin-top:0;
+    display: block;
+    margin-top: 0;
   }
 
   .reivew__autor {
-  margin-bottom:5px;
+    margin-bottom: 5px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .reivew {
-    min-height:415px;
+    min-height: 415px;
   }
 
   .reivew__text {
-    width:610px;
-
+    width: 610px;
   }
 }
