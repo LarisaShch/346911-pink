@@ -1,7 +1,6 @@
 .menu {
-  width: 100%;
+  width: 280px;
   text-align: center;
-  background-color: @darkblue;
   position: relative;
   z-index: 10;
   display: flex;
@@ -16,7 +15,7 @@
   min-height: 255px;
   display: block;
   text-align: center;
-  width: 100%;
+  /*width: 100%;*/
 }
 
 .menu__link {
@@ -33,7 +32,7 @@
 
 .menu__btn {
   position: absolute;
-  top: -28px;
+  top: -34px;
   right: 15px;
   display: block;
   width: 50px;
@@ -57,7 +56,7 @@
 }
 
 .menu__link:hover {
-  color: #d22856;
+  color: @red-color;
 }
 
 .menu__link:active {
@@ -66,7 +65,7 @@
 
 @media (min-width: @tablet-width) {
   .menu {
-    width: 660px;
+    width: 640px;
   }
 
   .menu__list {

@@ -1,7 +1,7 @@
 .contacts {
   background: @white-color;
   margin: auto;
-  width: 320px;
+  width: 100%;
   text-align: center;
   padding-top: 48px;
 }
@@ -32,10 +32,16 @@
 }
 
 .contacts__map {
-  width: 320px;
+  width: 100%;
   min-height: 203px;
   background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
+  margin: auto;
+  background-size: cover;
+}
+
+.contacts__addres {
+  width: 225px;
   margin: auto;
 }
 
@@ -44,7 +50,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 600px;
+    width: 100%;
   }
 
   .contacts__name {
@@ -68,11 +74,14 @@
   .contacts__addres {
     width: 290px;
   }
+
+  .contacts__map {
+    min-height: 305px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .contacts {
-    width: 1200px;
     justify-content: space-around;
   }
 
@@ -84,6 +93,7 @@
     width: 100%;
     background-position: 50%;
     order: 3;
+    min-height: 405px;
   }
 
   .contacts__email {

@@ -1,9 +1,10 @@
 .features {
-  background: @lightgrey url("../img/iphone-screen-mobile@1x.png");
+  background: @lightgrey url("../img/iphone-screen-mobile@1x.png");;
   background-repeat: no-repeat;
   background-position: 50% 110%;
   padding-top: 40px;
   min-height: 750px;
+  width: 100%;
 }
 
 .features__promo {
@@ -12,7 +13,6 @@
 
 @media (min-width: @tablet-width) {
   .features {
-    width: 660px;
     text-align: right;
     margin: auto;
     background-position: 5% 5%;
@@ -24,16 +24,16 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
-    width: 660px;
+    width: 100%;
     min-height: 300px;
     margin: auto;
     padding-top: 58px;
   }
 
   .features__promo-text {
-    width: 300px;
     color: @darkblue;
     text-align: left;
+    width: 296px;
   }
 
   .features__promo-title {
@@ -51,17 +51,14 @@
 
 @media (min-width: @desktop-width) {
   .features {
-    width: 1200px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     text-align: center;
-    background-position: 87% 20%;
-    background-size: auto;
+    background: @lightgrey;
   }
 
   .features__promo {
-    width: 1200px;
     background-color: @lightgrey;
   }
 

@@ -1,8 +1,8 @@
 .icon-download {
   margin: 0 auto;
-  background: @base-color;
-  width: 320px;
+  width: 100%;
   min-height: 270px;
+  background-color: @darkblue;
 }
 
 .icon-download__link {
@@ -48,14 +48,20 @@
 
 @media (min-width: @tablet-width) {
   .icon-download {
-    width: 660px;
+    width: 100%;
+    min-height: 620px;
     margin: 0 auto;
+    background-color: transparent;
+    background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: 100% 0%;
   }
 
   .icon-download__wrapper {
-    height: 362px;
-    background-position: bottom 32px right, top -99px center;
+    background-image: none;
     width: 660px;
+    min-height: 230px;
   }
 
   .icon-download__title {
@@ -65,13 +71,62 @@
     font-weight: 300;
     color: @white-color;
     margin: 0;
+    margin-left: -415px;
+    padding-top: 100px;
+  }
+
+  .icon-download__button {
+    width: 210px;
+    margin-top: 37px;
+  }
+
+  .icon-download__list {
+    text-align: left;
+    margin-left: 65px;
+  }
+
+  .icon-download__link--android {
+    opacity: 0.5;
+  }
+
+  .icon-download__description {
+    margin-left: 25px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .icon-download {
     position: relative;
-    width: 1200px;
+    width: 100%;
+    min-height: 740px;
     margin: auto;
+    background-color: none;
+    background-image: url("../img/iphone-hand-mobile@1x.png");
+    background-position: 80% 0%;
+    background-size: contain/*, cover*/;
+  }
+
+  .icon-download__title {
+    margin-left: -700px;
+  }
+
+  .icon-download__wrapper {
+    min-height: 285px;
+  }
+
+  .icon-download__button {
+    margin-left: 127px;
+  }
+
+  .icon-download__list {
+    margin-left: 175px;
+  }
+
+  .icon-download__link--android {
+    opacity: inherit;
+  }
+
+  .icon-download__description {
+    margin-left: 130px;
   }
 }

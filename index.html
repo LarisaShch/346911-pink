@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
@@ -32,13 +33,15 @@
     <main class="page-main">
       <div class="icon-download">
         <div class="icon-download__wrapper">
-        <h2 class="icon-download__title">Взгляните<br>на жизнь<br>иначе!</h2></div>
-        <a href="#" class="icon-download__button">Скачать приложение</a>
-        <a href="#" class="icon-download__link icon-download__link--apple"><img src="img/logo-apple.svg" alt="apple" width="48" height="57"></a>
-        <a href="#" class="icon-download__link icon-download__link--android"><img src="img/logo-android.svg" alt="android" width="45" height="47"></a>
-        <a href="#" class="icon-download__link icon-download__link--windows"><img src="img/logo-microsoft.svg" alt="windows" width="45" height="41"></a>
-        <p class="icon-download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-      </div>
+          <h2 class="icon-download__title">Взгляните<br>на жизнь<br>иначе!</h2></div>
+          <a href="#" class="icon-download__button">Скачать приложение</a>
+          <div class="icon-download__list">
+            <a href="#" class="icon-download__link icon-download__link--apple"><img src="img/logo-apple.svg" alt="apple" width="48" height="57"></a>
+            <a href="#" class="icon-download__link icon-download__link--android"><img src="img/logo-android.svg" alt="android" width="45" height="47"></a>
+            <a href="#" class="icon-download__link icon-download__link--windows"><img src="img/logo-microsoft.svg" alt="windows" width="45" height="41"></a>
+          </div>
+          <p class="icon-download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
       <div class="information">
         <h2 class="information__text">Устали от серости мегаполиса?</h2>
         <h2 class="information__text">Нам есть, что вам<br> предложить!</h2>
@@ -96,21 +99,21 @@
           </tr>
           <tr class="prices__second-line">
             <td class="prices__zero-cell">Розовый фильтр</td>
-            <td class="prices__first-cell"></td>
-            <td class="prices__second-cell">Розовый фильтр</td>
-            <td class="prices__third-cell"></td>
+            <td class="prices__first-cell prices__yes"></td>
+            <td class="prices__second-cell prices__yes">Розовый фильтр</td>
+            <td class="prices__third-cell prices__yes"></td>
           </tr>
           <tr class="prices__third-line">
             <td class="prices__zero-cell">Смайлики</td>
-            <td class="prices__first-cell"></td>
-            <td class="prices__second-cell">Смайлики</td>
-            <td class="prices__third-cell"></td>
+            <td class="prices__first-cell prices__no"></td>
+            <td class="prices__second-cell prices__yes">Смайлики</td>
+            <td class="prices__third-cell prices__yes"></td>
           </tr>
           <tr class="prices__fourth-line">
             <td class="prices__zero-cell">Комментарии</td>
-            <td class="prices__first-cell"></td>
-            <td class="prices__second-cell">Комментарии</td>
-            <td class="prices__third-cell"></td>
+            <td class="prices__first-cell prices__no"></td>
+            <td class="prices__second-cell prices__no">Комментарии</td>
+            <td class="prices__third-cell prices__yes"></td>
           </tr>
         </table>
         <p class="slider__toggles">

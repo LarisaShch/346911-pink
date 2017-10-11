@@ -1,5 +1,4 @@
 .blog {
-  background: @lightgrey;
   .padding();
   width: 320px;
   margin: auto;
@@ -19,10 +18,13 @@
 }
 
 .blog__wrapper {
-  width: 260px;
+  width: 240px;
   margin: auto;
   text-align: left;
   .padding();
+  margin-top: -25px;
+  background-color: @lightgrey;
+  min-height: 155px;
 }
 
 .blog__info {
@@ -54,14 +56,13 @@
 
 @media (min-width: @tablet-width) {
   .blog--big {
-    width: 660px;
+    width: 940px;
   }
 
   .blog {
     display: flex;
     flex-wrap: wrap;
-    width: 270px;
-    margin: auto;
+    width: 300px;
     margin-top: 0;
   }
 
@@ -75,5 +76,14 @@
 
   .blog__review {
     order: 3;
+  }
+
+  .blog__photo {
+    z-index: 50;
+  }
+
+  .blog__wrapper {
+    margin: 0;
+    margin-top: -10px;
   }
 }

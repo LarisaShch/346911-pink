@@ -16,11 +16,18 @@
 }
 
 .button--submit {
-  color: #d22856;
-  border: 3px solid #d22856;
+  color: @red-color;
+  border: 3px solid @red-color;
 }
 
 .button--reset {
   color: #dddfe0;
   border: 3px solid #dddfe0;
+}
+
+@media (min-width: @desktop-width) {
+  .button {
+    display: inline;
+    width: 183px;
+  }
 }
