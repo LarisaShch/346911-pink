@@ -10,18 +10,20 @@
   <body class="body-page">
     <header class="page-header">
       <div class="page-header__menu-wrapper">
-          <a href="#" class="page-header__logo"><img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="PINK"></a>
+          <a href="index.html" class="page-header__logo">
+            <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="PINK">
+          </a>
         <nav class="page-header__navigation menu">
           <button class="menu__btn">Открыть меню</button>
           <ul class="menu__list">
             <li class="menu__item">
-              <a href="#" class="menu__link">ГЛАВНАЯ</a>
+              <a href="index.html" class="menu__link">ГЛАВНАЯ</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">ФОТОГРАФИИ</a>
+              <a href="photo.html" class="menu__link">ФОТОГРАФИИ</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">КОНКУРС</a>
+              <a href="form.html" class="menu__link">КОНКУРС</a>
             </li>
             <li class="menu__item">
               <a href="#" class="menu__link"> HTML ACADEMY</a>
@@ -33,7 +35,7 @@
     <main class="page-main">
       <div class="icon-download">
         <div class="icon-download__wrapper">
-          <h2 class="icon-download__title">Взгляните<br>на жизнь<br>иначе!</h2></div>
+          <h2 class="icon-download__title">Взгляните на жизнь иначе!</h2>
           <a href="#" class="icon-download__button">Скачать приложение</a>
           <div class="icon-download__list">
             <a href="#" class="icon-download__link icon-download__link--apple"><img src="img/logo-apple.svg" alt="apple" width="48" height="57"></a>
@@ -42,31 +44,36 @@
           </div>
           <p class="icon-download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
+      </div>
       <div class="information">
         <h2 class="information__text">Устали от серости мегаполиса?</h2>
         <h2 class="information__text">Нам есть, что вам<br> предложить!</h2>
       </div>
       <div class="features">
-        <section class="feature-item">
-          <h3 class="feature-item__title">Поднимает настроение</h3>
-          <p class="feature-item__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-        </section>
-        <section class="feature-item">
-          <h3 class="feature-item__title">Меняет мир вокруг</h3>
-          <p class="feature-item__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-        </section>
-        <section class="feature-item">
-          <h3 class="feature-item__title">Заводит новых друзей</h3>
-          <p class="feature-item__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-        </section>
-      </div>
-      <section class="features__promo">
-        <div class="features__promo-text">
-          <p class="features__promo-title">Эффект на 24 часа!</p>
-          <p>Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-          <a href="#" class="features__promo-link">Узнать больше об исследовании</a>
+        <div class="features__wrapper">
+          <section class="feature-item">
+            <h3 class="feature-item__title">Поднимает настроение</h3>
+            <p class="feature-item__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </section>
+          <section class="feature-item">
+            <h3 class="feature-item__title">Меняет мир вокруг</h3>
+            <p class="feature-item__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </section>
+          <section class="feature-item">
+            <h3 class="feature-item__title">Заводит новых друзей</h3>
+            <p class="feature-item__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </section>
         </div>
-        <img src="http://placehold.it/150x100" alt="Timer" width="238" height="279">
+      </div>
+      <section class="feature">
+        <div class="feature__wrapper">
+          <div class="feature__promo">
+            <p class="feature__promo-title">Эффект на 24 часа!</p>
+            <p>Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <a href="#" class="feature__promo-link">Узнать больше об исследовании</a>
+          </div>
+          <img src="http://placehold.it/150x100" alt="Timer" width="238" height="279">
+        </div>
       </section>
       <div class="feedback slider">
         <section class="reivew">
@@ -124,21 +131,23 @@
       </div>
     </main>
     <div class="contacts">
-      <div class="contacts__name">
-        <h2 class="contacts__title">Остались вопросы?</h2>
-        <h2 class="contacts__title contacts__title--us">Свяжитесь с нами!</h2>
-      </div>
-      <div class="contacts__phone">
-        <p class="contacts__paragraph">Звоните:</p>
-        <p class="contacts__information">+7 (812) 555-66-66</p>
-      </div>
-      <div class="contacts__email">
-        <p class="contacts__paragraph">Пишите:</p>
-        <p class="contacts__information">mail@htmlacademy.ru</p>
-      </div>
-      <div class="contacts__addres">
-        <p class="contacts__paragraph">Приезжайте в гости:</p>
-        <p class="contacts__information">ул.Большая Конюшенная, 19/8</p>
+      <div class="contacts__wrapper">
+        <div class="contacts__name">
+          <h2 class="contacts__title">Остались вопросы?</h2>
+          <h2 class="contacts__title contacts__title--us">Свяжитесь с нами!</h2>
+        </div>
+        <div class="contacts__phone">
+          <p class="contacts__paragraph">Звоните:</p>
+          <p class="contacts__information">+7 (812) 555-66-66</p>
+        </div>
+        <div class="contacts__email">
+          <p class="contacts__paragraph">Пишите:</p>
+          <p class="contacts__information">mail@htmlacademy.ru</p>
+        </div>
+        <div class="contacts__addres">
+          <p class="contacts__paragraph">Приезжайте в гости:</p>
+          <p class="contacts__information">ул.Большая<br> Конюшенная, 19/8</p>
+        </div>
       </div>
       <div class="contacts__map"></div>
     </div>

@@ -12,20 +12,20 @@
 <body class="body-page">
   <header class="page-header">
     <div class="page-header__menu-wrapper">
-      <a href="#" class="page-header__logo">
+      <a href="index.html" class="page-header__logo">
         <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="PINK">
       </a>
       <nav class="page-header__navigation menu">
         <button class="menu__btn">Открыть меню</button>
         <ul class="menu__list">
           <li class="menu__item">
-            <a href="#" class="menu__link">ГЛАВНАЯ</a>
+            <a href="index.html" class="menu__link">ГЛАВНАЯ</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">ФОТОГРАФИИ</a>
+            <a href="photo.html" class="menu__link">ФОТОГРАФИИ</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">КОНКУРС</a>
+            <a href="form.html" class="menu__link">КОНКУРС</a>
           </li>
           <li class="menu__item">
             <a href="#" class="menu__link"> HTML ACADEMY</a>
@@ -39,9 +39,12 @@
       <h1 class="main-content__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </div>
     <form class="forms" method="post">
-      <p class="forms__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-        <span class="forms__description--hidden">Пожалуйста, заполните форму ниже:</span>
-      </p>
+      <div class="forms__description-wrapper">
+        <p class="forms__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+          <span class="forms__description--hidden">Пожалуйста, заполните форму ниже:</span>
+        </p>
+      </div>
+      <div class="forms__wrapper">
       <div class="forms__information-wrapper">
         <label for="surname" class="forms__label">ФАМИЛИЯ:</label>
         <input id="surname" class="forms__input" type="text" name="surname" placeholder="Укажите фамилию *">
@@ -89,13 +92,14 @@
       </div>
       <div class="forms__review-wrapper">
         <legend class="forms__legend">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
-        <input class="forms__input forms__input--textarea" cols="70" type="textarea" name="review" placeholder="Можно прям в красках, не стесняясь в выражениях">
+        <textarea name="review" class="forms__input forms__input--textarea">Можно прям в красках, не стесняясь в выражениях</textarea>
       </div>
       <div class="forms__send-wrapper">
         <button class="forms__button" type="submit" formaction="https://echo.htmlacademy.ru">ОТПРАВИТЬ ФОРМУ</button>
         <p class="forms__necessary">
           <span class="forms__necessary--note">*</span> — ОБЯЗАТЕЛЬНЫЕ ПОЛЯ</p>
       </div>
+    </div>
     </form>
     <div class="popup popup--failure">
       <p class="popup__title">Что-то пошло не так!</p>

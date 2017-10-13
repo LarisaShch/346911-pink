@@ -1,72 +1,43 @@
 .features {
-  background: @lightgrey url("../img/iphone-screen-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-position: 50% 110%;
+  background: @lightgrey;
   padding-top: 40px;
   min-height: 750px;
   width: 100%;
+  background-image: url("../img/iphone-screen-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 50% 110%;
 }
 
-.features__promo {
-  display: none;
+.features__wrapper {
+  width: 320px;
+  margin: auto;
+
 }
 
 @media (min-width: @tablet-width) {
   .features {
     text-align: right;
     margin: auto;
-    background-position: 5% 5%;
+    background-position: 15% 5%;
     min-height: 485px;
     background-size: 292px;
   }
 
-  .features__promo {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    width: 100%;
-    min-height: 300px;
-    margin: auto;
-    padding-top: 58px;
-  }
-
-  .features__promo-text {
-    color: @darkblue;
-    text-align: left;
-    width: 296px;
-  }
-
-  .features__promo-title {
-    font-weight: 700;
-    color: black;
-    font-size: 30px;
-    width: 168px;
-    line-height: 36px;
-  }
-
-  .features__promo-link {
-    color: #d22856;
+  .features__wrapper {
+    width: 660px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .features {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     text-align: center;
     background: @lightgrey;
   }
 
-  .features__promo {
-    background-color: @lightgrey;
-  }
-
-  .features__promo-text {
-    width: 425px;
-  }
-
-  .features__promo-title {
-    width: 300px;
+  .features__wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 960px;
+    justify-content: space-between;
   }
 }

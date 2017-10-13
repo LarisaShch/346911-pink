@@ -40,16 +40,14 @@
   background-size: cover;
 }
 
-.contacts__addres {
-  width: 225px;
+.contacts__wrapper {
+  width: 320px;
   margin: auto;
 }
 
 @media (min-width: @tablet-width) {
   .contacts {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+
     width: 100%;
   }
 
@@ -78,6 +76,13 @@
   .contacts__map {
     min-height: 305px;
   }
+
+  .contacts__wrapper {
+    width: 660px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -98,5 +103,10 @@
 
   .contacts__email {
     order: 2;
+  }
+
+  .contacts__wrapper {
+    width: 960px;
+    justify-content: space-between;
   }
 }

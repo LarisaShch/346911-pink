@@ -43,7 +43,6 @@
   background-repeat: no-repeat;
   background-position: bottom left, top -67px center;
   min-height: 395px;
-  width: 320px;
 }
 
 @media (min-width: @tablet-width) {
@@ -62,6 +61,8 @@
     background-image: none;
     width: 660px;
     min-height: 230px;
+    display: flex;
+    flex-direction: column;
   }
 
   .icon-download__title {
@@ -71,8 +72,9 @@
     font-weight: 300;
     color: @white-color;
     margin: 0;
-    margin-left: -415px;
-    padding-top: 100px;
+    width: 192px;
+    margin-top: 100px;
+    margin-left: 77px;
   }
 
   .icon-download__button {
@@ -107,11 +109,14 @@
   }
 
   .icon-download__title {
-    margin-left: -700px;
+    margin-top: 120px;
+    margin-left: 165px;
   }
 
   .icon-download__wrapper {
     min-height: 285px;
+    margin: 0;
+
   }
 
   .icon-download__button {
