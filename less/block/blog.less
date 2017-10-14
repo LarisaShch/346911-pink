@@ -74,6 +74,7 @@
     flex-wrap: wrap;
     width: 300px;
     margin-top: 0;
+    padding: 0;
   }
 
   .blog__wrapper--big {
@@ -98,8 +99,7 @@
   }
 
   .blog__photo-panorama {
-    left: calc(-7vw);
-    height: 509px;
+    left: calc(-50vw+50%);
   }
 
   .blog__note {
@@ -108,11 +108,6 @@
 }
 
 @media (min-width: @desktop-width) {
-  .blog__photo-panorama {
-    left: calc(-5vw);
-    height: 505px;
-  }
-
   .blog__note {
     top: 578px;
     right: 130px;
