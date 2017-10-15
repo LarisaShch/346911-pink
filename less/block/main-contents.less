@@ -8,6 +8,15 @@
 
 .main-contents__wrapper {
   width: 320px;
+  margin: auto;
+}
+
+.main-contents__blog--big {
+  width: 320px;
+  margin: auto;
+  background: @lightgrey;
+  .padding();
+  box-sizing: border-box;
 }
 
 @media (min-width: @tablet-width) {
@@ -21,6 +30,10 @@
     width: 660px;
     margin: auto;
   }
+
+  .main-contents__blog--big {
+    width: 660px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -32,5 +45,10 @@
   .main-contents__wrapper {
     width: 960px;
     background-color: @white-color;
+  }
+
+  .main-contents__blog--big {
+    width: 960px;
+    margin: auto;
   }
 }
