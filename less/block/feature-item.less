@@ -1,12 +1,12 @@
 .feature-item {
   width: 307px;
   margin: auto;
-  margin-bottom: 40px;
+  margin-bottom: 34px;
 }
 
 .feature-item__title {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 18px;
   color: black;
   text-align: center;
   line-height: 24px;
@@ -17,6 +17,9 @@
   font-size: 14px;
   line-height: 24px;
   text-align: center;
+  width: 260px;
+  margin: auto;
+  margin-top: -9px;
 }
 
 @media (min-width: @tablet-width) {
@@ -29,31 +32,41 @@
 
   .feature-item__description {
     text-align: left;
+    margin-left: 0;
+    width: 321px;
+    margin-bottom: 37px;
   }
 
   .feature-item__title {
     text-align: left;
+    margin-top: 30px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .feature-item {
     margin: 0;
-    width: 230px;
+    width: 245px;
     font-size: 18px;
     line-height: 30px;
     background-image: url("../img/iphone-screen-mobile@1x.png");
-    background-position: 50% 0%;
+    background-position: 50% -13%;
   }
 
   .feature-item__title {
     font-size: 30px;
     line-height: 30px;
     text-align: center;
-    margin-top: 360px;
+    margin-top: 315px;
+    padding-left: 23px;
   }
 
   .feature-item__description {
     text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    width: 240px;
+    margin-top: -3px;
+    margin-left: 13px;
   }
 }

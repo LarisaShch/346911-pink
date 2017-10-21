@@ -4,19 +4,21 @@
   background-color: @darkblue;
   background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 0% 35%, 50% 0%;
+  background-position: 20% 29%, 50% -34%;
 }
 
 .icon-download__link {
-  padding-right: 37px;
+  padding-left: 31px;
 }
 
 .icon-download__description {
   color: @text-color;
   width: 303px;
   margin: 0 auto;
-  padding-top: 23px;
-  padding-bottom: 33px;
+  padding-top: 13px;
+  line-height: 24px;
+  padding-left: 8px;
+  padding-bottom: 31px;
 }
 
 .icon-download__button {
@@ -32,7 +34,7 @@
   line-height: 18px;
   text-decoration: none;
   color: @text-color;
-  margin: 28px 20px 30px 20px;
+  margin: 28px 40px 30px 38px;
 }
 
 .icon-download__title {
@@ -47,13 +49,17 @@
 }
 
 .icon-download__wrapper--mobile {
-  padding-top: 500px;
+  padding-top: 396px;
+}
+
+.icon-download__list {
+  margin-left: -33px;
 }
 
 @media (min-width: @tablet-width) {
   .icon-download {
     width: 100%;
-    min-height: 620px;
+    min-height: 617px;
     margin: 0 auto;
     background-color: transparent;
     background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
@@ -77,18 +83,20 @@
     color: @white-color;
     margin: 0;
     width: 192px;
-    margin-top: 100px;
-    margin-left: 77px;
+    margin-top: 91px;
+    margin-left: 73px;
   }
 
   .icon-download__button {
-    width: 210px;
-    margin-top: 37px;
+    width: 224px;
+    margin-top: 32px;
+    margin-left: 19px;
+    margin-bottom: 45px;
   }
 
   .icon-download__list {
     text-align: left;
-    margin-left: 65px;
+    margin-left: 34px;
   }
 
   .icon-download__link--android {
@@ -96,7 +104,10 @@
   }
 
   .icon-download__description {
-    margin-left: 25px;
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 300;
+    padding-top: 29px;
   }
 
   .icon-download__wrapper--mobile {
@@ -108,18 +119,42 @@
   .icon-download {
     position: relative;
     width: 100%;
-    min-height: 740px;
+    min-height: 745px;
     margin: auto;
     background-color: none;
   }
 
   .icon-download__title {
-    margin-top: 120px;
+    margin-top: 112px;
+    font-size: 50px;
+    margin-left: 52px;
+    text-align: left;
+    line-height: 60px;
+    width: 215px;
   }
 
   .icon-download__wrapper {
     min-height: 285px;
     margin: auto;
     width: 960px;
+  }
+
+  .icon-download__button {
+    margin-top: 54px;
+    width: 237px;
+    font-size: 21px;
+    padding-left: 31px;
+    padding-right: 28px;
+    padding-top: 14px;
+    margin-bottom: 66px;
+  }
+
+  .icon-download__list {
+    margin-left: 37px;
+  }
+
+  .icon-download__description {
+    padding-right: 48px;
+    padding-top: 48px;
   }
 }

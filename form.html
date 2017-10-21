@@ -12,23 +12,23 @@
 <body class="body-page">
   <header class="page-header">
     <div class="page-header__menu-wrapper">
-      <a href="index.html" class="page-header__logo">
-        <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="PINK">
-      </a>
+        <a href="index.html" class="page-header__logo">
+          <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="PINK">
+        </a>
       <nav class="page-header__navigation menu">
         <button class="menu__btn">Открыть меню</button>
         <ul class="menu__list">
           <li class="menu__item">
-            <a href="index.html" class="menu__link">ГЛАВНАЯ</a>
+            <a href="index.html" class="menu__link">Главная</a>
           </li>
           <li class="menu__item">
-            <a href="photo.html" class="menu__link">ФОТОГРАФИИ</a>
+            <a href="photo.html" class="menu__link">Фотографии</a>
           </li>
           <li class="menu__item">
-            <a href="form.html" class="menu__link">КОНКУРС</a>
+            <a href="form.html" class="menu__link">Конкурс</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link"> HTML ACADEMY</a>
+            <a href="#" class="menu__link"> HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -46,16 +46,22 @@
       </div>
       <div class="forms__wrapper">
       <div class="forms__information-wrapper">
-        <label for="surname" class="forms__label">ФАМИЛИЯ:</label>
-        <input id="surname" class="forms__input" type="text" name="surname" placeholder="Укажите фамилию *">
-        <label for="name" class="forms__label">ИМЯ:</label>
-        <input id="name" class="forms__input" type="text" name="name" placeholder="Введите ваше имя *">
-        <label for="middle-name" class="forms__label">ОТЧЕСТВО:</label>
-        <input id="middle-name" class="forms__input" type="text" name="middle-name" placeholder="Ну и отчество тоже">
+        <div class="forms__name">
+          <label for="surname" class="forms__label">ФАМИЛИЯ:</label>
+          <input id="surname" class="forms__input" type="text" name="surname" placeholder="Укажите фамилию *">
+        </div>
+        <div class="forms__name">
+          <label for="name" class="forms__label">ИМЯ:</label>
+          <input id="name" class="forms__input" type="text" name="name" placeholder="Введите ваше имя *">
+        </div>
+        <div class="forms__name">
+          <label for="middle-name" class="forms__label">ОТЧЕСТВО:</label>
+          <input id="middle-name" class="forms__input" type="text" name="middle-name" placeholder="Ну и отчество тоже">
+        </div>
       </div>
       <div class="forms__background forms__achievements">
         <div class="forms__achievements-wrapper">
-          <legend class="forms__legend">ВАШИ БЕЗБАШЕННЫЕ ДОСТИЖЕНИЯ В ПУТЕШЕСТВИИ</legend>
+          <legend class="forms__legend forms__legend--title">ВАШИ БЕЗБАШЕННЫЕ ДОСТИЖЕНИЯ В ПУТЕШЕСТВИИ</legend>
           <input class="forms__input forms__input--checkbox" type="checkbox" checked>
           <label class="forms__label forms__label--checkbox">Сделал селфи с акулой</label>
           <input class="forms__input forms__input--checkbox" type="checkbox" checked>
@@ -72,12 +78,14 @@
       </div>
       <div class="forms__contacts-wrapper">
         <legend class="forms__legend forms__legend--info">КОНТАКТНАЯ ИНФОРМАЦИЯ</legend>
-        <label class="forms__label"> НОМЕР ТЕЛЕФОНА
-          <input class="forms__input" type="tel" name="telephone" placeholder="Номер, пожалуйста">
-        </label>
-        <label class="forms__label"> АДРЕС ПОЧТЫ
-          <input class="forms__input" type="email" name="email" placeholder="Введите почту *">
-        </label>
+        <div class="forms__contacts forms__contacts--phone">
+          <label class="forms__label"> НОМЕР ТЕЛЕФОНА</label>
+            <input class="forms__input" type="tel" name="telephone" placeholder="Номер, пожалуйста">
+        </div>
+        <div class="forms__contacts forms__contacts--mail">
+          <label class="forms__label"> АДРЕС ПОЧТЫ</label>
+            <input class="forms__input" type="email" name="email" placeholder="Введите почту *">
+        </div>
       </div>
       <div class="forms__background forms__application">
         <div class="forms__application-wrapper">
@@ -97,7 +105,7 @@
       <div class="forms__send-wrapper">
         <button class="forms__button" type="submit" formaction="https://echo.htmlacademy.ru">ОТПРАВИТЬ ФОРМУ</button>
         <p class="forms__necessary">
-          <span class="forms__necessary--note">*</span> — ОБЯЗАТЕЛЬНЫЕ ПОЛЯ</p>
+          <span class="forms__necessary--note">*</span> — ОБЯЗАТЕЛЬНЫЕ <span class="forms__necessary--hidden">ДЛЯ ЗАПОЛНЕНИЯ</span> ПОЛЯ</p>
       </div>
     </div>
     </form>

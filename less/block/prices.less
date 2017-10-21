@@ -1,7 +1,8 @@
 .prices {
-  margin-left: -355px;
+  margin-left: -337px;
   width: 800px;
   color: @darkblue;
+  min-height: 284px;
 }
 
 .prices__first-line {
@@ -12,18 +13,20 @@
 .prices__title {
   margin-bottom: 0;
   color: @white-color;
+  margin-top: 2px;
 }
 
 .prices__amount {
-  margin-top: 0;
+  margin-top: 1px;
   color: @white-color;
+  font-size: 24px;
+  margin-bottom: 5px;
+  font-weight: 300;
 }
 
 .prices__second-cell {
-  padding-top: 15px;
-  padding-bottom: 15px;
   text-align: left;
-  padding-left: 20px;
+  padding-left: 21px;
   text-transform: uppercase;
 }
 
@@ -41,13 +44,16 @@
 
 .prices__second-cell--title {
   text-align: center;
-  padding-left: 0;
+  padding-left: 25px;
+  padding-right: 42px;
 }
 
 @media (min-width: @tablet-width) {
   .prices {
     margin: auto;
-    width: 660px;
+    width: 622px;
+    min-height: 220px;
+    margin-top: 12px;
   }
 
   .prices__zero-cell-empty {
@@ -56,6 +62,9 @@
 
   .prices__second-cell {
     font-size: 0;
+    padding-right: 2px;
+    padding-left: 29px;
+    padding-top: 5px;
   }
 
   .prices__second-cell--title {
@@ -73,10 +82,79 @@
     background-position: 50% 50%;
     background-repeat: no-repeat;
   }
+
+  .prices__first-line {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .prices__amount {
+    font-size: 18px;
+    width: 87px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .prices__title {
+    width: 87px;
+    margin-top: 0;
+  }
+
+  .prices__first-cell {
+    padding-left: 31px;
+    padding-top: 5px;
+  }
+
+  .prices__third-cell {
+    padding-left: 31px;
+    padding-top: 5px;
+  }
+
+  .prices__zero-cell {
+    text-align: left;
+    width: 114px;
+    padding-left: 14px;
+    padding-right: 26px;
+  }
+
 }
 
 @media (min-width: @desktop-width) {
   .prices {
-    width: 960px;
+    width: 942px;
+    min-height: 279px;
+    font-size: 18px;
+    margin-left: 299px;
+    margin-top: 6px;
+  }
+
+  .prices__amount {
+    margin: auto;
+    font-size: 24px;
+    line-height: 30px;
+    width: 100px;
+  }
+
+  .prices__title {
+    margin: auto;
+  }
+
+  .prices__zero-cell-empty {
+    width: 230px;
+  }
+
+  .prices__first-line {
+    font-size: 18px;
+  }
+
+  .prices__first-line td {
+    padding-bottom: 12px;
+    padding-top: 6px;
+    padding-left: 4px;
+  }
+
+  .prices__zero-cell {
+    padding-left: 22px;
   }
 }

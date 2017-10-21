@@ -18,9 +18,13 @@
   padding-top: 33px;
 }
 
+.main-content__title--photo {
+  padding-top: 29px;
+}
+
 @media (min-width: @tablet-width) {
   .main-content {
-    min-height: 330px;
+    min-height: 329px;
     background-color: transparent;
     background-size: cover;
   }
@@ -28,12 +32,20 @@
   .main-content__title {
     font-size: 50px;
     line-height: 60px;
-    width: 355px;
+    width: 485px;
+    padding-top: 69px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .main-content {
     background-image: none;
+    min-height: 288px;
+  }
+
+  .main-content__title {
+    width: 758px;
+    padding-top: 68px;
+    padding-left: 19px;
   }
 }
