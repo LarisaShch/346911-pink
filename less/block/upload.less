@@ -8,19 +8,30 @@
 .upload__image {
   margin: auto;
   display: block;
-  padding-top: 20px;
+  padding-top: 18px;
   padding-bottom: 40px;
 }
 
 @media (min-width: @tablet-width) {
   .upload {
-    min-height: 510px;
+    min-height: 503px;
+  }
+
+  .upload__image {
+    width: 299px;
+    height: 401px;
+    margin: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .upload {
     min-height: 515px;
-    width: 940px;
+    width: 100%;
+    margin-bottom: 28px;
+  }
+
+  .upload__image {
+    padding-top: 25px;
   }
 }

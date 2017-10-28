@@ -1,18 +1,20 @@
 .form {
   width: 320px;
+  margin: auto;
+  margin-top: -5px;
 }
 
 .form__buttons {
   width: 100%;
-  .padding();
-  padding-top: 38px;
-  padding-bottom: 41px;
+  padding-top: 69px;
+  padding-bottom: 30px;
+  margin: auto;
 }
 
 @media (min-width: @tablet-width) {
   .form {
     display: flex;
-    padding-top: 55px;
+    padding-top: 31px;
     justify-content: space-around;
     width: 660px;
     margin: auto;
@@ -22,14 +24,24 @@
     display: flex;
     flex-direction: column;
   }
+
+  .form__buttons {
+    margin-top: 100px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .form {
     width: 960px;
+    margin-left: 330px;
   }
 
   .form__wrapper {
     margin: auto;
+    margin-right: 159px;
+  }
+
+  .form__buttons {
+    margin-top: 188px;
   }
 }
